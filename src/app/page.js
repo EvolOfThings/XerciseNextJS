@@ -1,5 +1,42 @@
+//nxtjs metadata apis to manage metadat
+//static md and dynamic md
 
-export default function Home() {
+
+export const metadata = {
+  title: "Home"
+}
+
+//OUTPUT STATIC:
+// <head>
+//  <title>
+//   Home
+//  </title>
+//</head> 
+
+//export default function Page() {
+//  return <h1>Next.js Page with Static metadata</h1>
+//}
+
+
+
+//DYNAMIC METADATA
+//export async function generateMetada({params, searchParams}) {
+//  const product = await.getProduct(params.id);
+//  return {title: product.title};
+//}
+
+//OUTPUT DYNAMIC:
+// <head>
+//  <title>
+//   My Unique Product
+//  </title>
+//</head> 
+
+//Dynamic metada api helps SEOs tremendously
+
+
+
+export default function Page() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
