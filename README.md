@@ -1,1 +1,3 @@
 # XerciseNextJS
+
+Brushing up nextJS
