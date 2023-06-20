@@ -4,9 +4,9 @@ import Feed from "@components/Feed";
 //static md and dynamic md
 
 
-export const metadata = {
-  title: "Home"
-}
+// export const metadata = {
+//   title: "Home"
+// }
 
 //OUTPUT STATIC:
 // <head>
