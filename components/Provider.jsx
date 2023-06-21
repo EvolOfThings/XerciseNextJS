@@ -1,4 +1,6 @@
-import React from 'react'
+"use client"
+
+//using browser's capabilities[session] so use client server
 
 import { SessionProvider } from 'next-auth/react'
 
