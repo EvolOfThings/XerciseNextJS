@@ -1,6 +1,8 @@
 import NextAuth from "next-auth/next";
 import GoogleProvider from "next-auth/providers/google";
 
+import { connectToDB } from "@utils/database";
+
 console.log(`process.env.GOOGLE_ID: ${process.env.GOOGLE_ID}, process.env.GOOGLE_CLIENT_SECRET: ${process.env.GOOGLE_CLIENT_SECRET}`)
 
 const handler = NextAuth({
@@ -23,9 +25,18 @@ const handler = NextAuth({
     },
     async signIn({profile}) {
         try {
-            
+            await connectToDB();
+        
+        // check if user already exists
+
+
+        //if not, create auser and save to db
+        //we should create a model, based on which the doc of the user will be created 
+
+            return true;
         } catch (error) {
-            
+            console.log(error);
+            return false;
         }
 
     }
