@@ -18,6 +18,8 @@ const UserSchema = newSchema ({
 
 
 //this would have to be used if the server was always running
-const User = model("User", UserSchema);
+//but in nextjs, route will be created and running for the time when it is getting called so we need to make one more check
+//check =>> models obj   is provided ny Mongose lib. if there's no existing model for the same then create new model
+const User =models.User || model("User", UserSchema);
 
 export default User;
