@@ -25,7 +25,7 @@ const handler = NextAuth({
     },
     async signIn({profile}) {
         try {
-             //serverless route => it's a lambda function, that opens up only hwne it gets called. 
+             //serverless route => it's a lambda function, that opens up only when it gets called. 
             // gets called, spins up a server an make connection to db
             
 
@@ -36,8 +36,9 @@ const handler = NextAuth({
                 email: profile.email
             });
 
-        //if not, create auser and save to db
+        //if not, create a user and save to db
         //we should create a model, based on which the doc of the user will be created 
+        //check models dir
             if (!userExists) {
                 await User.create({
                     email: profile.email,
