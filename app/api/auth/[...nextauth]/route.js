@@ -9,7 +9,7 @@ console.log(`process.env.GOOGLE_ID: ${process.env.GOOGLE_ID}, process.env.GOOGLE
 const handler = NextAuth({
     providers: [
         GoogleProvider({
-            clients: process.env.GOOGLE_ID,
+            clientId: process.env.GOOGLE_ID,
             clientSecret: process.env.GOOGLE_CLIENT_SECRET,
         }
         )
