@@ -14,7 +14,7 @@ const Form = ({type, post, setPost, submitting, handleSubmit}) => {
       onSubmit={handleSubmit}
       className="mt-10 w-full max-w-2xl flex flex-col gap-7 glassmorphism">
 <label>
-  <span className="font-satoshi font-semibold text-base text-gray-50">Your AI prompt</span>
+  <span className="font-satoshi font-semibold text-base text-gray-700">Your AI prompt</span>
 
   <textarea 
   value={post.prompt} 
@@ -25,7 +25,7 @@ const Form = ({type, post, setPost, submitting, handleSubmit}) => {
   className="form_textarea" />
 </label>
 <label>
-  <span className="font-satoshi font-semibold text-base text-gray-50">
+  <span className="font-satoshi font-semibold text-base text-gray-700">
     Tag {` `}
     <span className="font-normal">(#product, #webdevelopment, #idea)</span>
     </span>
