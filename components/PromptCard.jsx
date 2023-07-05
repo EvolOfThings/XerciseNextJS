@@ -39,8 +39,8 @@ const handleCopy = () => {
           <Image
             alt='icon'
             src={copied === post.prompt 
-              ? '/assets/icon/tick.svg'
-              : '/assets/icon/copy.svg' 
+              ? '/assets/icons/tick.svg'
+              : '/assets/icons/copy.svg' 
             }  
             width={12}
             height={12}    

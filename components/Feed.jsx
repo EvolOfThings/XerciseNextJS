@@ -29,7 +29,7 @@ const handleSearchChange = (e) => {
 useEffect(() => {
   const fetchPosts = async () => {
     const response = await fetch('/api/prompt');
-    const data = await response.ison();
+    const data = await response.json();
 
     setPosts(data);
   }
@@ -40,14 +40,14 @@ useEffect(() => {
 
 return (
     <section className='feed'>
-      <Form className="relative w-full flex-center">
+      <form className="relative w-full flex-center">
         <input 
         type="text"
         value={searchText}
         placeholder='Search for a tag or a username'
         required
         onChange={handleSearchChange} />
-      </Form>
+      </form>
       
     <PromptCardList
       data={posts}
