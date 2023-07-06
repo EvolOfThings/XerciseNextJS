@@ -60,7 +60,7 @@ const handleCopy = () => {
         className='font-inter text-sm blue_gradient cursor-pointer'
         onClick={() => handleTagClick && handleTagClick(post.tag)}
       >
-        {post.tag}
+        #{post.tag}
       </p>
       {/* node js saves id as _id */}
       {session?.user?.id === post.creator._id && pathName === '/profile' && (
