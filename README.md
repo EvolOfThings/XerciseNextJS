@@ -10,3 +10,4 @@ This project was built to brush up my rusty nextJS and also learn tailwindCSS al
 - React
 - Tailwind CSS
 - ExpressJS
+- MongoDB
