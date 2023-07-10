@@ -2,7 +2,7 @@
 
 Brushing up nextJS
 
-This project was built to brush up my rusty nextJS and also learn tailwindCSS along. (Oh, AI was just a bonus)
+This project was built to brush up my rusty nextJS and also to learn tailwindCSS along.
 
 ## Stack
 
